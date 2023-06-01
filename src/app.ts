@@ -8,7 +8,7 @@ app.use([express.json(), cors(), urlencoded({ extended: true })])
 app.get('/', (req:Request, res: Response) => {
   res.send('Hello server..')
 })
-app.get('/user', (req:Request, res: Response) => {
+app.get('/user', (req:any, res: Response) => {
     res.send('Hello server..')
   })
   
